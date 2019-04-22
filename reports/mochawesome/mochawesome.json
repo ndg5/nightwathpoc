@@ -1,0 +1,269 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-04-16T11:13:16.902Z",
+    "end": "2019-04-16T11:13:17.005Z",
+    "duration": 103,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "f849ec57-5dea-4ad8-a872-275900ca954f",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "ead86193-7214-4ee7-a1da-134a26374956",
+        "title": "@asyncawait GET Request ./get Async Await Style",
+        "fullFile": "/Users/nandang5/nightwatch-mocha-poc-automation/tests/api/async-await-style/api_get_test.js",
+        "file": "/tests/api/async-await-style/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "GET scenario OK aja",
+            "fullTitle": "@asyncawait GET Request ./get Async Await Style GET scenario OK aja",
+            "timedOut": false,
+            "duration": 30,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await api.getAPI();\nexpect(response.status).to.equal(cases.scenario.getOK.response);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "736a5834-83d7-4865-b60e-63947cebb70f",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "736a5834-83d7-4865-b60e-63947cebb70f"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 30,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "0aad2c25-b175-484f-a357-3fa608a69235",
+        "title": "POST request ./post Async Await Style",
+        "fullFile": "/Users/nandang5/nightwatch-mocha-poc-automation/tests/api/async-await-style/api_post_test.js",
+        "file": "/tests/api/async-await-style/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@asyncawait POST scenario OK aja",
+            "fullTitle": "POST request ./post Async Await Style @asyncawait POST scenario OK aja",
+            "timedOut": false,
+            "duration": 20,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await api.postAPI(global.testData);\nexpect(response.status).to.equal(cases.scenario.getOK.response);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5912eacc-f87b-4e28-984f-021013ff4858",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "5912eacc-f87b-4e28-984f-021013ff4858"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 20,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "44807c09-52b6-469f-b854-fce162bfe0bc",
+        "title": "@callback GET Request ./get Callback Style",
+        "fullFile": "/Users/nandang5/nightwatch-mocha-poc-automation/tests/api/callback-style/api_get_test.js",
+        "file": "/tests/api/callback-style/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "GET scenario OK aja",
+            "fullTitle": "@callback GET Request ./get Callback Style GET scenario OK aja",
+            "timedOut": false,
+            "duration": 4,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "api.getAPI(function (response) {\n  expect(response.status).to.equal(cases.scenario.getOK.response);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b80d95da-e7c1-41e1-a65f-d281c73db64b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b80d95da-e7c1-41e1-a65f-d281c73db64b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "ae55f38f-65b7-48f9-b913-c1e491dac5c1",
+        "title": "POST request ./post Callback Style",
+        "fullFile": "/Users/nandang5/nightwatch-mocha-poc-automation/tests/api/callback-style/api_post_test.js",
+        "file": "/tests/api/callback-style/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@callback POST scenario OK aja",
+            "fullTitle": "POST request ./post Callback Style @callback POST scenario OK aja",
+            "timedOut": false,
+            "duration": 4,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "api.postAPI(global.testData, function (response) {\n  expect(response.status).to.equal(cases.scenario.getOK.response);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e14b3cf6-8c7e-498b-948d-daf14cee5c29",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e14b3cf6-8c7e-498b-948d-daf14cee5c29"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "038dacba-1a47-40ae-aea3-8eb2977d58a1",
+        "title": "@promise GET Request ./get Promise Style",
+        "fullFile": "/Users/nandang5/nightwatch-mocha-poc-automation/tests/api/promise-style/api_get_test.js",
+        "file": "/tests/api/promise-style/api_get_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "GET scenario OK aja",
+            "fullTitle": "@promise GET Request ./get Promise Style GET scenario OK aja",
+            "timedOut": false,
+            "duration": 3,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return api.getAPI()\n  .then((response) => {\n    expect(response.status).to.equal(cases.scenario.getOK.response);\n  })\n  .catch((err) => {\n    return Promise.reject(err);\n  });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "63635654-1da1-48bc-aed1-44ffd6008925",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "63635654-1da1-48bc-aed1-44ffd6008925"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      },
+      {
+        "uuid": "8f4daf5f-e75e-4513-ac98-d521bbe7f64c",
+        "title": "POST request ./post Promise Style",
+        "fullFile": "/Users/nandang5/nightwatch-mocha-poc-automation/tests/api/promise-style/api_post_test.js",
+        "file": "/tests/api/promise-style/api_post_test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@promise POST scenario OK aja",
+            "fullTitle": "POST request ./post Promise Style @promise POST scenario OK aja",
+            "timedOut": false,
+            "duration": 7,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return api.postAPI(global.testData)\n  .then((response) => {\n    expect(response.status).to.equal(cases.scenario.getOK.response);\n  })\n  .catch((err) => {\n    return Promise.reject(err);\n  });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4bc9b7cd-62c6-40e4-bb33-8a80df45cd81",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "4bc9b7cd-62c6-40e4-bb33-8a80df45cd81"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 7,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 30000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 30000
+  },
+  "copyrightYear": 2019
+}
