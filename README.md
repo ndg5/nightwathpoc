@@ -8,6 +8,12 @@ This is POC repo for NightwatchJS and Mocha API/web automation using BDD and pag
 
 **1.** Install latest NVM and Node: https://bizzyid.atlassian.net/wiki/spaces/QE/pages/129007743/Updating+Node.js+Version+using+NVM
 
+We can update/downgrade/switch the version of Node.js using nvm.
+This is useful if we want to check our code in different Node.js version.
+Install Homebrew (https://brew.sh/)
+Install NVM (http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)
+Instal nodejs v8.11.4 (or any version you need)
+
 **2.** Clone this repo
 
 **3.** Access the folder
